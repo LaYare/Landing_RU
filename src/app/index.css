@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  background-image: url(../assets/images/estudiantes.jpg);
+  background-position: top;
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.nav li {
+  list-style: none;
+  display: inline;
+  color: #fff;
+  margin: 0 8px;
+  font-size: 1.2em;
+}
+.nav li span{
+  font-weight: lighter;
+  color: rgba(255,255,255,0.4);
+}
+.logo-RU{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-RU p{
+  background-color: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-size: 1.4em;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+.logo-RU .down{
+  width: 50px;
+  margin-bottom: 40px;
+}
+.download-app{
+  display: flex;
+  justify-content: center;
+}
+.panel, .formulario{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: lighter;
+  border-radius: 18px;
+  background-color: #FF4A52;
+  color: #ffffff;
+}
+.panel .botones-download{
+  display: flex;
+}
+.botones-download div{
+  padding: 0px 50px;
+}
+.botones-download .ios{
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+.botones-download div img{
+  width: 200px;
+}
+.funciones > p{
+  text-align: center;
+  font-size: 1.5em;
+  margin: 5% 0;
+}
+.app{
+  display: flex;
+}
+.app .primera-columna div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 30px;
+}
+.app .primera-columna div h3, .app .tercer-columna div h3, .compite h3{
+  color: #FF4A52;
+}
+.app .primera-columna div h3,p, .app .tercer-columna div h3,p ,.compite h3, p{
+  margin: 5px;
+}
+.app .tercer-columna div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px;
+}
+.text-right{
+  text-align: right;
+}
+.app .segunda-columna{
+  background-image: url(../assets/images/contenedor.png);
+  background-size: 300px 550px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .segunda-columna .contenido-de-funciones{
+  border: 1px solid black;
+  width: 265px;
+  height: 420px;
+  margin-top: -15px;
+}
+.compite{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+.mgt3{
+  margin-top: 3%;
+}
+.familia{
+  text-align: center;
+}
+.familia span{
+  color: #2E59C0;
+}
+.formulario{
+  padding: 30px 0;
+  margin-top: 60px;
+}
+.formulario .contacto{
+  display: flex;
+  margin-top: 30px;
+}
+.contacto input{
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  font-style: italic;
+  padding: 0 20px;
+  margin-right: 5px;
+}
+.contacto button{
+  border: none;
+  background-color: #2E59C0;
+  font-size: 1em;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+.contacto button img{
+  margin-left: 15px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p{
+  text-align: center;
+  color: #B3B3B3;
+}
+.footer .sellos img{
+  width: 80px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.cero{
+  background-image: url(../assets/images/00.png);
+  transition: 1s;
+}
+.uno{
+  background-image: url(../assets/images/01.jpg);
+  transition: 1s;
+}
+.dos{
+  background-image: url(../assets/images/02.jpg);
+  transition: 1s;
+}
+.tres{
+  background-image: url(../assets/images/03.jpg);
+  transition: 1s;
+}
+.cuatro{
+  background-image: url(../assets/images/04.jpg);
+  transition: 1s;
+}
+.cinco{
+  background-image: url(../assets/images/05.jpg);
+  transition: 1s;
+}
+.seis{
+  background-image: url(../assets/images/06.jpg);
+  transition: 1s;
+}
+.siete{
+  background-image: url(../assets/images/07.jpg);
+  transition: 1s;
+}
+
+
+
+
