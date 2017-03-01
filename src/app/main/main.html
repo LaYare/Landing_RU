@@ -1,12 +1,13 @@
 <div class="container">
   <div class="header">
-    <div class="nav">
+  <button id="togg" onclick="menu()" ><img src="../assets/images/toggle-icon.png"></button>
+    <div class="nav menu-responsive" id="toggi">
       <ul>
-        <li>Funciones</li>
-        <li><span>|</span></li>
-        <li>Colaboradores</li>
-        <li><span>|</span></li>
-        <li>Descargar</li>
+        <li><a href="#fun" onclick="menu()">Funciones</a></li>
+        <li class="hidden-xs"><span>|</span></li>
+        <li><a href="" onclick="menu()">Colaboradores</a></li>
+        <li class="hidden-xs"><span>|</span></li>
+        <li><a href="" onclick="menu()">Descargar</a></li>
       </ul>
     </div>
     <div class="logo-RU">
@@ -28,7 +29,7 @@
       </div>
     </div>
   </div>
-
+  <a name="fun"></a>
   <div class="funciones">
     <p><b>Funciones</b></p>
     <div class="app">
@@ -36,17 +37,17 @@
         <div>
           <img src="../assets/images/uno.png" onmouseenter="backUno()" onmouseout="borradoUno()">
           <h3>Compra por paquetes</h3>
-          <p class="text-right">Compra los paquetes que mejor se acomoden a tu <br> necesidad de universidad y maeteria</p>
+          <p class="text-right hidden-xs">Compra los paquetes que mejor se acomoden a tu <br> necesidad de universidad y maeteria</p>
         </div>
         <div>
           <img src="../assets/images/tres.png" id="02" onmouseover="backDos()" onmouseout="borradoDos()">
           <h3>Estadisticas</h3>
-          <p class="text-right">Analiza tus resultados y monitorea tus logros a lo<br> largo del tiempo</p>
+          <p class="text-right hidden-xs">Analiza tus resultados y monitorea tus logros a lo<br> largo del tiempo</p>
         </div>
         <div>
           <img src="../assets/images/cinco.png" id="03" onmouseover="backTres()" onmouseout="borradoTres()">
-          <h3>Estudia en todas partes</h3>
-          <p class="text-right">Nuestra plataforma te permite estudiar sin WiFi.<br> Planifica tus tiempos sin preocupaciones</p>
+          <h3>Estudia en <br class="hidden-lg"> todas partes</h3>
+          <p class="text-right hidden-xs">Nuestra plataforma te permite estudiar sin WiFi.<br> Planifica tus tiempos sin preocupaciones</p>
         </div>
       </div>
 
@@ -59,25 +60,30 @@
         <div>
           <img src="../assets/images/dos.png" id="04" onmouseover="backCuatro()" onmouseout="borradoCuatro()">
           <h3>Contenido de calidad</h3>
-          <p>Todas las preguntas que encontrarás han sido<br>revisadas por profesionales altamente calificados</p>
+          <p class="hidden-xs">Todas las preguntas que encontrarás han sido<br class="hidden-xs">revisadas por profesionales altamente calificados</p>
         </div>
         <div>
           <img src="../assets/images/cuatro.png" id="05" onmouseover="backCinco()" onmouseout="borradoCinco()">
-          <h3>Retroalimentación</h3>
-          <p>Todas las preguntas que contestes tendrán una<br> descripción de por qué es correcta o errónea</p>
+          <h3>Retro<span class="hidden-lg">-</span><br class="hidden-lg">alimentación</h3>
+          <p class="hidden-xs">Todas las preguntas que contestes tendrán una<br class="hidden-xs"> descripción de por qué es correcta o errónea</p>
         </div>
         <div>
           <img src="../assets/images/seis.png" id="06" onmouseover="backSeis()" onmouseout="borradoSeis()">
           <h3>Preguntas relevantes</h3>
-          <p>Las preguntas con las que estudiarás son de temas<br> importantes y parecidas al ENARM</p>
+          <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y parecidas al ENARM</p>
         </div>
       </div>
     </div>
     <div class="compite">
       <img src="../assets/images/siete.png" onmouseover="backSiete()" onmouseout="borradoSiete()">
       <h3>Compite contra tus amigos</h3>
-      <p>Con la funcionalidad de DESAFIO, prueba tus conocimientos con los de tus amigos</p>
+      <p class="hidden-xs">Con la funcionalidad de DESAFIO, prueba tus conocimientos con los de tus amigos</p>
       <img class="mgt3" src="../assets/images/ocho.png">
+      <div class="conte-up">
+        <a href='#' onclick='subir();return false' title='Ir Arriba'  class="up">
+        <img src="../assets/images/up.png">
+      </a>
+      </div>
       <p class="familia mgt3">Reto Universidad es parte de la familia de simuladores Reto, en la cual hemos desarrollado simuladores tales como <span><b>Reto ENARM</b></span> o Reto Universidad.
       <br>Todos son parte de una serie de simuladores que estaremos desarrollando durante este año</p>
     </div>
@@ -95,7 +101,7 @@
     </div>
   </div>
   <div class="footer mgt3">
-    <div>
+    <div class="soc">
       <img src="../assets/images/facebook.png">
       <img src="../assets/images/twitter.png">
     </div>

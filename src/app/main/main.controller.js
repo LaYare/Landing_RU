@@ -118,5 +118,17 @@ function borradoOcho() {
   document.getElementById("contenido").classList.add('cero');
 };
 
+var arriba;
+function subir() {
+  if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+    window.scrollBy(0, -15);
+    arriba = setTimeout('subir()', 10);
+  }
+    else clearTimeout(arriba);
+  }
+
+function menu() {
+  document.getElementById("toggi").classList.toggle('menu-responsive');
+};
 
 
