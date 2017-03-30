@@ -1,53 +1,118 @@
 <div class="container">
   <div class="header">
+  <!-- boton menu responsive -->
   <button id="togg" onclick="menu()" ><img src="../assets/images/toggle-icon.png"></button>
+  <!-- Navbar -->
     <div class="nav menu-responsive" id="toggi">
+      <img src="../assets/images/icon-reto.png">
       <ul>
-        <li><a href="#fun" onclick="menu()">Funciones</a></li>
+        <li><a href="#funciones01" onclick="menu()">Funciones</a></li>
         <li class="hidden-xs"><span>|</span></li>
-        <li><a href="" onclick="menu()">Colaboradores</a></li>
+        <li><a href="#fun" onclick="menu()">Quiénes somos</a></li>
         <li class="hidden-xs"><span>|</span></li>
-        <li><a href="" onclick="menu()">Descargar</a></li>
+        <li><a href="" onclick="menu()">Suscripciones</a></li>
+        <li class="hidden-xs"><span>|</span></li>
+        <li><a href="" onclick="menu()">Blog</a></li>
       </ul>
-    </div>
-    <div class="logo-RU">
-      <img src="../assets/images/logo.png">
-      <p> <b>Reto Universidad</b> es una guía de estudios por medio de un<br> app-simulador para los examanes de admisión de diversas<br> universidades como la UNAM y el Poli</p>
-      <img class="down" src="../assets/images/down.png">
-    </div>
-    <div class="download-app">
-      <div class="panel">
-        <p>Descarga nuestra app gratis:</p>
-        <div class="botones-download">
-          <div class="ios">
-            <img src="../assets/images/ios.png">
-          </div>
-          <div>
-            <img src="../assets/images/android.png">
+      <!-- Sección de botones -->
+      <div class="download-app">
+        <div class="triangulo"></div>
+        <div class="panel">
+          <p>Descarga<br> gratuita:</p>
+          <div class="botones-download">
+            <div>
+              <img src="../assets/images/ios.png">
+            </div>
+            <div>
+              <img src="../assets/images/android.png">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <a name="fun"></a>
-  <div class="funciones">
+  <!-- slider -->
+  <div class="contenedor-slider">
+  <!-- imagenes del slider -->
+    <div class="imagen-slider actual fondo">
+      <div class="texto-slider texto-fondo">
+        <img src="../assets/images/fondo02.png">
+        <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <a href="">
+          ¡Descubre  todo lo que puedes hacer!
+        </a>
+      </div>
+    </div>
+    <div class="imagen-slider">
+      <img src="../assets/images/estudiantes.jpg">
+      <div class="texto-slider texto-fondo">
+        <img src="../assets/images/fondo02.png">
+        <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <a href="">
+          ¡Descubre  todo lo que puedes hacer!
+        </a>
+      </div>
+    </div>
+    <div class="imagen-slider">
+      <img src="../assets/images/estudiantes02.jpg">
+      <div class="texto-slider texto-fondo">
+        <img src="../assets/images/fondo02.png">
+        <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <a href="">
+          ¡Descubre  todo lo que puedes hacer!
+        </a>
+      </div>
+    </div>
+    <div class="imagen-slider">
+      <img src="../assets/images/estudiantes03.jpg">
+      <div class="texto-slider texto-fondo">
+        <img src="../assets/images/fondo02.png">
+        <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <a href="">
+          ¡Descubre  todo lo que puedes hacer!
+        </a>
+      </div>
+    </div>
+    
+    <!-- flechas de dirección del slider -->
+    <a href="" class="anterior" onclick="anterior();"><img src="../assets/images/prev.png" alt=""></a>
+    <a href="" class="siguiente" onclick="siguiente();"><img src="../assets/images/next.png" alt=""></a>
+    
+    <!-- puntos -->
+    <div class="puntos">
+      <span class="punto active" onclick="mostrar(0);"></span>
+      <span class="punto" onclick="mostrar(1);"></span>
+      <span class="punto" onclick="mostrar(2);"></span>
+      <span class="punto" onclick="mostrar(3);"></span>
+    </div>
+
+  </div>
+
+
+  <div class="funciones" data-anchor="funciones01">
     <p><b>Funciones</b></p>
     <div class="app">
       <div class="primera-columna">
         <div>
           <img src="../assets/images/uno.png" onmouseenter="backUno()" onmouseout="borradoUno()">
-          <h3>Compra por paquetes</h3>
-          <p class="text-right hidden-xs">Compra los paquetes que mejor se acomoden a tu <br> necesidad de universidad y maeteria</p>
+          <div>
+            <h3>Compra por paquetes</h3>
+            <p class="text-right hidden-xs">Compra los paquetes que mejor se acomoden a tu <br> necesidad de universidad y maeteria</p>
+          </div>
         </div>
         <div>
           <img src="../assets/images/tres.png" id="02" onmouseover="backDos()" onmouseout="borradoDos()">
-          <h3>Estadisticas</h3>
-          <p class="text-right hidden-xs">Analiza tus resultados y monitorea tus logros a lo<br> largo del tiempo</p>
+          <div>
+            <h3>Estadisticas</h3>
+            <p class="text-right hidden-xs">Analiza tus resultados y monitorea tus logros a lo<br> largo del tiempo</p>
+          </div>
         </div>
         <div>
           <img src="../assets/images/cinco.png" id="03" onmouseover="backTres()" onmouseout="borradoTres()">
-          <h3>Estudia en <br class="hidden-lg"> todas partes</h3>
-          <p class="text-right hidden-xs">Nuestra plataforma te permite estudiar sin WiFi.<br> Planifica tus tiempos sin preocupaciones</p>
+          <div>
+            <h3>Estudia en <br class="hidden-lg"> todas partes</h3>
+            <p class="text-right hidden-xs">Nuestra plataforma te permite estudiar sin WiFi.<br> Planifica tus tiempos sin preocupaciones</p>
+          </div>
         </div>
       </div>
 
@@ -59,58 +124,141 @@
       <div class="tercer-columna">
         <div>
           <img src="../assets/images/dos.png" id="04" onmouseover="backCuatro()" onmouseout="borradoCuatro()">
-          <h3>Contenido de calidad</h3>
-          <p class="hidden-xs">Todas las preguntas que encontrarás han sido<br class="hidden-xs">revisadas por profesionales altamente calificados</p>
+          <div>
+            <h3>Contenido de calidad</h3>
+            <p class="hidden-xs">Todas las preguntas que encontrarás han sido<br class="hidden-xs">revisadas por profesionales altamente calificados</p>
+          </div>
         </div>
         <div>
           <img src="../assets/images/cuatro.png" id="05" onmouseover="backCinco()" onmouseout="borradoCinco()">
-          <h3>Retro<span class="hidden-lg">-</span><br class="hidden-lg">alimentación</h3>
-          <p class="hidden-xs">Todas las preguntas que contestes tendrán una<br class="hidden-xs"> descripción de por qué es correcta o errónea</p>
+          <div>
+            <h3>Retro<span class="hidden-lg">-</span><br class="hidden-lg">alimentación</h3>
+            <p class="hidden-xs">Todas las preguntas que contestes tendrán una<br class="hidden-xs"> descripción de por qué es correcta o errónea</p>
+          </div>
         </div>
         <div>
           <img src="../assets/images/seis.png" id="06" onmouseover="backSeis()" onmouseout="borradoSeis()">
-          <h3>Preguntas relevantes</h3>
-          <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y parecidas al ENARM</p>
+          <div>
+            <h3>Preguntas relevantes</h3>
+            <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y parecidas al ENARM</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="compite">
-      <img src="../assets/images/siete.png" onmouseover="backSiete()" onmouseout="borradoSiete()">
-      <h3>Compite contra tus amigos</h3>
-      <p class="hidden-xs">Con la funcionalidad de DESAFIO, prueba tus conocimientos con los de tus amigos</p>
-      <img class="mgt3" src="../assets/images/ocho.png">
-      <div class="conte-up">
-        <a href='#' onclick='subir();return false' title='Ir Arriba'  class="up">
-        <img src="../assets/images/up.png">
-      </a>
-      </div>
-      <p class="familia mgt3">Reto Universidad es parte de la familia de simuladores Reto, en la cual hemos desarrollado simuladores tales como <span><b>Reto ENARM</b></span> o Reto Universidad.
-      <br>Todos son parte de una serie de simuladores que estaremos desarrollando durante este año</p>
+  </div>
+  <div class="compite">
+    <div class="mision">
+      <h3>Misión</h3>
+      <img src="../assets/images/mision.png">
+      <p>
+        En Reto queremos desmostrar que la tecnología y la educación son una excelente combinacion. Creemos firmemente que el estudio sea la clave para una sociedad mejor, más ecuánime y justa. Nuestro objetivo es apoyar a la mayor cantidad de estudiantes para que puedan acceder a los conocimientos necesarios para que se vuelvan actores de este cambio.
+      </p>
+    </div>
+    <div class="equipo">
+      <h3>Nuestro equipo</h3>
+      <img src="../assets/images/vision.png">
+      <p>
+        Nuestro equipo tiene experiencia en desarrollo de contenido digital con enfoque en educación. En particularya contamos con casos de éxitos como Reto Enarm, que al día de hoy cuenta con más de 500,000 preguntas contestadas y miles de estudiantes apoyados.
+      </p>
     </div>
   </div>
+  <div class="asset">
+    <img src="../assets/images/icon-d.png">
+  </div>
+  <!-- Sección suscripciones azul -->
+  <div class="suscripciones">
+    <div class="triangulo-2"></div>
+    <div>
+      <h3>Suscripciones</h3>
+      <p class="familia">En Reto queremos demostrar que la tecnología y la educación son una excelente combinación. Creemos firmemente que el amor estudio sea la clave para una sociedad mejor, más ecuánime y justa. Nuestro objetivo es apoyar a la mayor cantidad de estudiantes para que puedan acceder a los conocimientos necesarios para que se vuelvan actores de este cambio.
+      </p>
+    </div>
+    <div class="table">
+      <ul class="transparencia01">
+        <li>&nbsp;</li>
+        <li><b>General</b></li>
+        <li><b>UNAM</b></li>
+        <li><b>POLI</b></li>
+        <li><b>UAM</b></li>
+      </ul>
+      <ul class="transparencia02">
+        <li><b>Mensual</b></li>
+        <li>50</li>
+        <li>50</li>
+        <li>50</li>
+        <li>50</li>
+      </ul>
+      <ul>
+        <li><b>Trimestral</b></li>
+        <li>45</li>
+        <li>45</li>
+        <li>45</li>
+        <li>45</li>
+      </ul>
+      <ul class="transparencia02">
+        <li><b>Semestral</b></li>
+        <li>40</li>
+        <li>40</li>
+        <li>40</li>
+        <li>40</li>
+      </ul>
+    </div>
+    <div class="desc">
+      <h3>¡Descarga nuestra app gratis y asegura tu futuro!</h3>
+      <div class="botones-descarga">
+        <img src="../assets/images/ios.png">
+        <img src="../assets/images/android.png">
+      </div>
+    </div>
+  </div>
+  <!-- Footer con formulario de contacto -->
   <div class="formulario">
-    <p>¡Descrube la forma más eficiente para entrar a la UNAM, Poli y muchas otras universidades!</p>
-    <div class="contacto">
+    <div>
+      <div class="sellos">
+        <img src="../assets/images/Sellos-02.png">
+      </div>
+      <div class="conte">
+        <ul>
+          <li><b>Funciones</b></li>
+          <li><b>Quiénes somos</b></li>
+          <li><b>Suscripciones</b></li>
+          <li><b>Blog</b></li>
+          <li><img src="../assets/images/facebook.png" alt=""></li>
+          <li><img src="../assets/images/instagram.png" alt=""></li>
+        </ul>
+        <p>¡Descrube la forma más eficiente para entrar a la UNAM, Poli y muchas otras universidades!</p>
+        <div class="contacto">
+          <form>
+            <input type="text" name="Correo" placeholder="Escribe tu email...">
+          </form>
+          <button>
+            ¡Suscríbete!
+          </button>
+        </div>
+        <small>
+        Todos los derechos reservados a Mellow Ventures / Mellow Consulting México D.F. 2017
+      </small>
+      </div>
+      <div class="sellos">
+        <img src="../assets/images/Sellos-01.png">
+      </div>
+    </div>
+  </div>
+  <div class="pop-up" id="pop">
+    <small>Suscríbete y obtén</small>
+    <big>10%</big>
+    <p>de descuento</p>
+    <small>en la descarga de nuestra app</small>
+    <div>
       <form>
-        <input type="text" name="Correo" placeholder="Email">
+        <input type="text" name="Correo" placeholder="Escribe tu email...">
       </form>
       <button>
-        ¡Suscríbete!
-        <img src="../assets/images/email.png">
+        Obtén tu -10%
       </button>
     </div>
-  </div>
-  <div class="footer mgt3">
-    <div class="soc">
-      <img src="../assets/images/facebook.png">
-      <img src="../assets/images/twitter.png">
-    </div>
-    <p class="magt3">
-      Todos los derechos reservados a Mellow Ventures<br> / Mellow Consulting México D.F. 2017
-    </p>
-    <div class="sellos mgt3">
-      <img src="../assets/images/sello-MV.png">
-      <img src="../assets/images/sello-desarrollo.png">
-    </div>
+    <span onclick="popHidden();">
+      Quiero perderme esta gran oportunidad
+    </span>
   </div>
 </div>

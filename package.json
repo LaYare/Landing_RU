@@ -1,7 +1,9 @@
 {
   "name": "landingRu",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
   "scripts": {
     "test": "gulp test"
   },

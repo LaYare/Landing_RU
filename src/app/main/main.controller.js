@@ -3,7 +3,10 @@
 
   angular
     .module('landingRu')
-    .controller('MainController', MainController);
+    .controller('MainController', MainController)
+    .directive('startslider',function($timeout) {
+    
+});
 
   /** @ngInject */
   function MainController($timeout, webDevTec, toastr) {
@@ -11,8 +14,12 @@
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
-    vm.creationDate = 1488211390597;
+    vm.creationDate = 1471300053273;
     vm.showToastr = showToastr;
+    vm.pictures = [];
+    for (var i=1; i<=16;i++){
+      vm.pictures.push({src: '/assets/images/' + i +'.png'});
+    }
 
     activate();
 
@@ -118,17 +125,48 @@ function borradoOcho() {
   document.getElementById("contenido").classList.add('cero');
 };
 
-var arriba;
-function subir() {
-  if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-    window.scrollBy(0, -15);
-    arriba = setTimeout('subir()', 10);
+// funcionalidad del slide
+
+var actual = 0;
+function puntos(n) {
+  var ptn = document.getElementsByClassName("punto");
+  for (i = 0; i < ptn.length; i++) {
+    if (ptn[i].className.includes("active")) {
+      ptn[i].className = ptn[i].className.replace("active", "");
+      break;
+    }
   }
-    else clearTimeout(arriba);
+  ptn[n].className += " active"
+}
+function mostrar(n) {
+  var imagenes = document.getElementsByClassName("imagen-slider");
+  for (i = 0; i < imagenes.length; i++) {
+    if (imagenes[i].className.includes("actual")) {
+      imagenes[i].className = imagenes[i].className.replace("actual", "");
+      break;
+    }
   }
+  actual = n;
+  imagenes[n].className += " actual";
+  puntos(n);
+}
 
-function menu() {
-  document.getElementById("toggi").classList.toggle('menu-responsive');
-};
+function siguiente() {
+  actual++;
+  if (actual > 3) {
+    actual = 0;
+  }
+  mostrar(actual);
+}
+function anterior() {
+  actual--;
+  if (actual < 0) {
+    actual = 3;
+  }
+  mostrar(actual);
+}
+var play = setInterval("siguiente()",7000);
 
-
+function popHidden(){
+  document.getElementById("pop").classList.add('hidden-pop');
+}
