@@ -1,18 +1,18 @@
 <div class="container">
-  <div class="header">
+  <div class="header hidden-xs">
   <!-- boton menu responsive -->
-  <button id="togg" onclick="menu()" ><img src="../assets/images/toggle-icon.png"></button>
+  <button id="togg" onclick="menu()" ><img src="../assets/images/up.png"></button>
   <!-- Navbar -->
     <div class="nav menu-responsive" id="toggi">
-      <img src="../assets/images/icon-reto.png">
+      <img src="../assets/images/icon-reto.png" ng-click="gotoAnchor(0)">
       <ul>
-        <li><a href="#funciones01" onclick="menu()">Funciones</a></li>
+        <li><a href="" ng-click="gotoAnchor(1)">Funciones</a></li>
         <li class="hidden-xs"><span>|</span></li>
-        <li><a href="#fun" onclick="menu()">Quiénes somos</a></li>
+        <li><a href="" ng-click="gotoAnchor(2)">Quiénes somos</a></li>
         <li class="hidden-xs"><span>|</span></li>
-        <li><a href="" onclick="menu()">Suscripciones</a></li>
+        <li><a href="" ng-click="gotoAnchor(3)">Suscripciones</a></li>
         <li class="hidden-xs"><span>|</span></li>
-        <li><a href="" onclick="menu()">Blog</a></li>
+        <li><a href="">Blog</a></li>
       </ul>
       <!-- Sección de botones -->
       <div class="download-app">
@@ -32,7 +32,7 @@
     </div>
   </div>
   <!-- slider -->
-  <div class="contenedor-slider">
+  <div class="contenedor-slider" id="anchor{{0}}">
   <!-- imagenes del slider -->
     <div class="imagen-slider actual fondo">
       <div class="texto-slider texto-fondo">
@@ -48,7 +48,7 @@
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
         <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
-        <a href="">
+        <a ng-click="gotoAnchor(1)">
           ¡Descubre  todo lo que puedes hacer!
         </a>
       </div>
@@ -58,7 +58,7 @@
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
         <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
-        <a href="">
+        <a ng-click="gotoAnchor(1)">
           ¡Descubre  todo lo que puedes hacer!
         </a>
       </div>
@@ -68,7 +68,7 @@
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
         <p><strong>Reto Universidad</strong><br>es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
-        <a href="">
+        <a ng-click="gotoAnchor(1)">
           ¡Descubre  todo lo que puedes hacer!
         </a>
       </div>
@@ -88,8 +88,7 @@
 
   </div>
 
-
-  <div class="funciones" data-anchor="funciones01">
+  <div class="funciones" id="anchor{{1}}">
     <p><b>Funciones</b></p>
     <div class="app">
       <div class="primera-columna">
@@ -130,14 +129,14 @@
           </div>
         </div>
         <div>
-          <img src="../assets/images/cuatro.png" id="05" onmouseover="backCinco()" onmouseout="borradoCinco()">
+          <img src="../assets/images/cuatro.png" class="especial" id="05" onmouseover="backCinco()" onmouseout="borradoCinco()">
           <div>
             <h3>Retro<span class="hidden-lg">-</span><br class="hidden-lg">alimentación</h3>
             <p class="hidden-xs">Todas las preguntas que contestes tendrán una<br class="hidden-xs"> descripción de por qué es correcta o errónea</p>
           </div>
         </div>
         <div>
-          <img src="../assets/images/seis.png" id="06" onmouseover="backSeis()" onmouseout="borradoSeis()">
+          <img src="../assets/images/seis.png" class="especial" id="06" onmouseover="backSeis()" onmouseout="borradoSeis()">
           <div>
             <h3>Preguntas relevantes</h3>
             <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y parecidas al ENARM</p>
@@ -146,7 +145,7 @@
       </div>
     </div>
   </div>
-  <div class="compite">
+  <div class="compite" id="anchor{{2}}">
     <div class="mision">
       <h3>Misión</h3>
       <img src="../assets/images/mision.png">
@@ -166,7 +165,7 @@
     <img src="../assets/images/icon-d.png">
   </div>
   <!-- Sección suscripciones azul -->
-  <div class="suscripciones">
+  <div class="suscripciones" id="anchor{{3}}">
     <div class="triangulo-2"></div>
     <div>
       <h3>Suscripciones</h3>
@@ -214,15 +213,15 @@
   <!-- Footer con formulario de contacto -->
   <div class="formulario">
     <div>
-      <div class="sellos">
-        <img src="../assets/images/Sellos-02.png">
+      <div class="sellos hidden-xs">
+        <img src="../assets/images/XMLID_391_.png">
       </div>
       <div class="conte">
-        <ul>
-          <li><b>Funciones</b></li>
-          <li><b>Quiénes somos</b></li>
-          <li><b>Suscripciones</b></li>
-          <li><b>Blog</b></li>
+        <ul class="hidden-xs">
+          <li><a ng-click="gotoAnchor(1)"><b>Funciones</b></a></li>
+          <li><a ng-click="gotoAnchor(2)"><b>Quiénes somos</b></a></li>
+          <li><a ng-click="gotoAnchor(3)"><b>Suscripciones</b></a></li>
+          <li><a onclick="menu()">Blog</a></li>
           <li><img src="../assets/images/facebook.png" alt=""></li>
           <li><img src="../assets/images/instagram.png" alt=""></li>
         </ul>
@@ -239,8 +238,13 @@
         Todos los derechos reservados a Mellow Ventures / Mellow Consulting México D.F. 2017
       </small>
       </div>
-      <div class="sellos">
-        <img src="../assets/images/Sellos-01.png">
+      <div class="sellos-responsive">
+        <div class="sellos hidden-lg">
+          <img src="../assets/images/Sellos-02.png">
+        </div>
+        <div class="sellos">
+          <img src="../assets/images/Sellos-01.png">
+        </div>
       </div>
     </div>
   </div>
