@@ -3,11 +3,11 @@
     display: none !important;
   }
   .hidden-xs{
-  	display: none !important;	
+  	display: none !important;
   }
 
   .hidden-lg{
-    display: initial !important; 
+    display: initial !important;
   }
   .header{
     position: initial;
@@ -47,7 +47,7 @@
     color: #fff;
     font-size: 1em;
     padding: 5px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.4); 
+    border-bottom: 1px solid rgba(255,255,255,0.4);
   }
   .nav li:hover {
     font-size: 1.1em;
@@ -90,7 +90,7 @@
   }
 
   .texto-fondo img{
-    display: none; 
+    display: none;
   }
   .texto-fondo{
     display: flex;
@@ -297,16 +297,18 @@
   border: none;
   color: #9B9B9B;
   font-size: 12px;
-  padding: 0 20px;
+  padding: 0 10px;
+  margin-top: 20px;
 }
 .contacto button, .pop-up button{
   border: none;
   background-color: #FF4A52;
   font-size: 12px;
   color: #ffffff;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .sellos-responsive{
   display: flex;
@@ -322,5 +324,33 @@
   .footer .sellos img{
     width: 40px;
   }
-  
+
+  /*modal*/
+
+  .pop-up{
+    background-size: 90%;
+  }
+  .pop-up small{
+    font-size: 10px;
+  }
+  .pop-up big{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .pop-up p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .pop-up div{
+    display: flex;
+
+  }
+  .pop-up span{
+    font-size: 9px;
+    line-height: 12px;
+    padding: 0 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
 }
