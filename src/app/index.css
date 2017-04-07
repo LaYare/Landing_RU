@@ -21,6 +21,7 @@ a {
 /*Navegador*/
 .nav{
   display: flex;
+  width: 100%;
   justify-content: space-between;
   background-color: #FF494F;
   margin-bottom: 60px;
@@ -29,21 +30,25 @@ a {
   display: none;
 }
 .nav > img{
-  width: 60px;
-  height: 50px;
-  margin-left: 160px;
+  width: 44px;
+  height: 39px;
+  margin-left: 14%;
+  margin-top: 0.35%;
+}
+.nav ul{
+  width: 40%;
+  margin-left: 5%;
 }
 .nav li {
   list-style: none;
   display: inline;
   color: #fff;
-  margin: 0 8px;
   font-size: 14px;
-  font-weight: bold;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0.5% 5%;
 }
-.nav li span{
-  font-weight: lighter;
-  color: rgba(255,255,255,0.4);
+.nav ul .blog{
+  border-right: 1px solid transparent;
 }
 .download-app{
   display: flex;
@@ -53,6 +58,7 @@ a {
   display: flex;
   align-items: center;
   font-size: 12px;
+  text-align: right;
   background-color: #4A4A4A;
   color: #ffffff;
   padding-right: 120px;
@@ -122,6 +128,7 @@ a {
   margin-left: 15%;
   line-height: 35px;
   padding: 0 20px;
+  border-radius: 5px;
   font-size: 14px;
   background-color: #2A57C6;
 }
@@ -149,10 +156,12 @@ a {
 }
 .anterior{
   left: 15%;
+  top: 50%; 
   cursor: pointer;
 }
 .siguiente{
   left: 81.5%;
+  top: 50%;
   cursor: pointer;
 }
 .puntos{
@@ -184,6 +193,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #f3f3f3;
+  padding-bottom: 4%;
   border-radius: 250% 250% 250% 250% / 0% 0% 20% 20%;
 
 }
@@ -195,6 +205,14 @@ a {
 }
 .app{
   display: flex;
+}
+.app .primera-columna div > img{
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.app .tercer-columna div > img{
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 .app .primera-columna div{
   display: flex;
@@ -256,7 +274,7 @@ a {
   border: 1px solid black;
   width: 212px;
   height: 342px;
-  margin-top: -11px;
+  margin-top: -10px;
 }
 .compite{
   max-width: 82vw;
@@ -301,11 +319,11 @@ a {
 }
 .suscripciones h3{
   font-size: 20px;
-  font-weight: bold;
 }
 .desc h3{
   font-size: 18px;
   text-align: center;
+  font-weight: lighter;
 }
 .suscripciones .triangulo-2 {
   width: 0; 
@@ -339,10 +357,6 @@ a {
   line-height: 30px;
   width: 20%;
   font-size: 14px;
-}
-.suscripciones .table li b{
-  font-size: 14px;
-  font-weight: bold;
 }
 .suscripciones .table .transparencia01{
   background-color:  #FF494F;
@@ -381,7 +395,7 @@ a {
   font-weight: lighter;
   text-align: center;
   color: #ffffff;
-  padding: 30px 0;
+  padding: 30px 0 2px;
 }
 .formulario .sellos img{
   width: 98px;
@@ -391,21 +405,28 @@ a {
 }
 .formulario .conte p{
   font-size: 14px;
+  line-height: 40px;
 }
 .formulario .conte ul{
   width: 90%;
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: -5px;
 }
 .formulario .conte li{
   list-style: none;
   display: inline;
   font-size: 14px;
-  font-weight: bold;
+}
+.formulario .conte li img{
+  margin-right: 15px;
+  margin-top: -10px;
 }
 .formulario .conte small{
   color: #9B9B9B;
   font-size: 12px;
+  line-height: 50px;
 }
 .formulario .contacto{
   display: flex;
@@ -502,11 +523,11 @@ a {
 }
 .pop-up big{
   font-size: 100px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .pop-up p{
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .pop-up div{
   display: flex;
