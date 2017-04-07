@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Sans-Serif;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -20,7 +21,7 @@ a {
 }
 /*Navegador*/
 .nav{
-  margin-left: 0px !important;
+  margin-left: -7px !important;
   padding-left: 0px !important;
   display: flex;
   width: 100%;
