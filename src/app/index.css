@@ -26,7 +26,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #FF494F;
+  background-color: #F8697A;
   margin-bottom: 60px;
 }
 #togg{
@@ -133,7 +133,7 @@ a {
   padding: 0 20px;
   border-radius: 5px;
   font-size: 14px;
-  background-color: #2A57C6;
+  background-color: #FFA40D;
 }
 .actual{
   visibility: visible;
@@ -183,11 +183,11 @@ a {
   cursor: pointer;
 }
 .punto:hover{
-  background-color: #FF494F;
+  background-color: #F8697A;
   cursor: pointer;
 }
 .active{
-  background: #FF494F; 
+  background: #F8697A; 
 }
 .funciones{
   width: 100%;
@@ -231,7 +231,7 @@ a {
   background-position: right;
 }
 .app .primera-columna div h3, .app .tercer-columna div h3{
-  color: #FE504F;
+  color: #F8697A;
   font-size: 16px;
 }
 .app .primera-columna div h3,p, .app .tercer-columna div h3,p ,.compite h3, p{
@@ -296,7 +296,7 @@ a {
   align-items: center;
 }
 .mision{
-  border-right: 2px dotted #7894D6;
+  border-right: 2px dotted #000;
 }
 .mision p, .equipo p{
   text-align: justify;
@@ -362,7 +362,7 @@ a {
   font-size: 14px;
 }
 .suscripciones .table .transparencia01{
-  background-color:  #FF494F;
+  background-color:  #F8697A;
 }
 .suscripciones .table .transparencia02{
   background-color: rgba(255,255,255,0.2);
@@ -445,7 +445,7 @@ a {
 }
 .contacto button, .pop-up button{
   border: none;
-  background-color: #FF4A52;
+  background-color: #FFA40D;
   font-size: 1em;
   color: #ffffff;
   padding: 0 20px;
