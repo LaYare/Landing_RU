@@ -61,7 +61,7 @@ a {
   display: flex;
   align-items: center;
   font-size: 12px;
-  text-align: right;
+  text-align: center;
   background-color: #4A4A4A;
   color: #ffffff;
   padding-right: 120px;
@@ -159,7 +159,7 @@ a {
 }
 .anterior{
   left: 15%;
-  top: 50%; 
+  top: 50%;
   cursor: pointer;
 }
 .siguiente{
@@ -187,7 +187,7 @@ a {
   cursor: pointer;
 }
 .active{
-  background: #F8697A; 
+  background: #F8697A;
 }
 .funciones{
   width: 100%;
@@ -292,7 +292,7 @@ a {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .mision{
@@ -303,6 +303,7 @@ a {
   height: 10vh;
 }
 .asset{
+  margin-top:30px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -329,11 +330,11 @@ a {
   font-weight: lighter;
 }
 .suscripciones .triangulo-2 {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 10px solid #fff;
   border-left: 10px solid transparent;
-  border-right: 10px solid transparent; 
+  border-right: 10px solid transparent;
 }
 .suscripciones div{
   width: 68%;
@@ -384,7 +385,7 @@ a {
   color: #2E59C0;
 }
 .formulario{
-  background-color: #4A4A4A; 
+  background-color: #4A4A4A;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -465,7 +466,7 @@ a {
 .cero{
   background-image: url(../assets/images/00.png);
   background-position: center;
-  transition: 1s; 
+  transition: 1s;
 }
 .uno{
   background-image: url(../assets/images/01.jpg);
@@ -498,7 +499,7 @@ a {
   transition: 1s;
 }
 .hidden-lg{
-    display: none !important; 
+    display: none !important;
   }
 .show-pop{
   display: initial;
@@ -544,6 +545,3 @@ a {
   margin-top: 30px;
   cursor: pointer;
 }
-
-
-

@@ -137,6 +137,9 @@
     width: 7px;
     height: 7px;
   }
+  .funciones{
+    margin-bottom: 30px;
+  }
 
   .funciones > p{
     font-size: 1em;
@@ -190,23 +193,26 @@
   /*quienes somos*/
   .compite{
     max-width: 100vw;
-    height: 43vh;
+    height: 50vh;
   }
   .compite h3{
     font-size: 13px;
   }
   .mision, .equipo{
     width: 50%;
-    height: 40vh;
+    height: 50vh;
     padding: 0.3em;
   }
   .mision{
-    border-right: 2px dotted #000;
+    border-right: 1.5px dotted #000;
   }
   .mision p, .equipo p{
     text-align: justify;
-    height: 25vh;
+    height: 35vh;
+    box-sizing: border-box;
     font-size: 12px;
+    width:90%;
+    line-height: 12pt;
   }
   /*seccion de suscripciones*/
   .suscripciones{
