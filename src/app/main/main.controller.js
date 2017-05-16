@@ -9,7 +9,7 @@
   }]);
 
   /** @ngInject */
-  function MainController($anchorScroll, $location, $scope) {
+  function MainController($anchorScroll, $location, $scope, $http, $window) {
     $scope.gotoAnchor = function(x) {
       var newHash = 'anchor' + x;
       if ($location.hash() !== newHash) {
@@ -22,6 +22,22 @@
         $anchorScroll();
       }
     };
+    $scope.user = {};
+
+$scope.addPost = function () {
+
+      $scope.user.page="retouniversidad.com";
+   $http.post("http://emailapi.mellow.online/api/general",$scope.user)
+       .success(function (data, status, headers, config) {
+           $window.location.reload();
+           console.log(data);
+       })
+       .error(function (data, status, header, config) {
+            console.log(data);
+       });
+
+};
+
   }
 })();
 
