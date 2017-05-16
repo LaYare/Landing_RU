@@ -264,9 +264,9 @@
         <p>¡Descubre la forma más eficiente para entrar a la UNAM, Poli y muchas otras universidades!</p>
         <div class="contacto">
           <form>
-            <input type="text" name="Correo" placeholder="Escribe tu email...">
+            <input type="text" name="Correo"  ng-model="user.email"  placeholder="Escribe tu email...">
           </form>
-          <button>
+          <button ng-click="addPost(user)">
             ¡Suscríbete!
           </button>
         </div>
@@ -291,9 +291,9 @@
     <small>en la descarga de nuestra app</small>
     <div>
       <form>
-        <input type="text" name="Correo" placeholder="Escribe tu email...">
+        <input type="text" name="Correo" ng-model="user.email" placeholder="Escribe tu email...">
       </form>
-      <button>
+      <button ng-click="addPost(user)">
         Obtén tu -10%
       </button>
     </div>
