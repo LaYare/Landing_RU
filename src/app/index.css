@@ -449,7 +449,7 @@ a {
   border: none;
   color: #9B9B9B;
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 .contacto button, .pop-up button{
   border: none;
@@ -476,32 +476,32 @@ a {
   transition: 1s;
 }
 .uno{
-  background-image: url(../assets/images/01.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }
 .dos{
-  background-image: url(../assets/images/02.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }
 .tres{
-  background-image: url(../assets/images/03.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }
 .cuatro{
-  background-image: url(../assets/images/04.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }
 .cinco{
-  background-image: url(../assets/images/05.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }
 .seis{
-  background-image: url(../assets/images/06.jpg);
+  background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
 }

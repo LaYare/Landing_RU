@@ -264,11 +264,13 @@
         <p>¡Descubre la forma más eficiente para entrar a la UNAM, Poli y muchas otras universidades!</p>
         <div class="contacto">
           <form>
-            <input type="text" name="Correo"  ng-model="user.email"  placeholder="Escribe tu email...">
+            <div class="contacto ">
+                  <input type="email" name="Correo"  ng-model="user.email"  placeholder="Escribe tu email..." required >
+                 <button  ng-click="addPost(user)">
+                ¡Suscríbete!
+              </button>
+            </div>
           </form>
-          <button ng-click="addPost(user)">
-            ¡Suscríbete!
-          </button>
         </div>
         <small>
         Todos los derechos reservados a Mellow Ventures / Mellow Consulting México D.F. 2017
@@ -291,11 +293,13 @@
     <small>en la descarga de nuestra app</small>
     <div>
       <form>
-        <input type="text" name="Correo" ng-model="user.email" placeholder="Escribe tu email...">
+        <div class="">
+          <input type="email" name="Correo" ng-model="user.email" placeholder="Escribe tu email..." required >
+          <button ng-click="addPost(user)">
+            Obtén tu -10%
+          </button>
+        </div>
       </form>
-      <button ng-click="addPost(user)">
-        Obtén tu -10%
-      </button>
     </div>
     <span onclick="popHidden();">
       Quiero perderme esta gran oportunidad
