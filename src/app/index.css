@@ -8,6 +8,9 @@ a {
   color: #ffffff;
   cursor: pointer;
 }
+.hidden-xx{
+  display:none;
+}
 .container {
   width: 100vw !important;
   display: flex;
