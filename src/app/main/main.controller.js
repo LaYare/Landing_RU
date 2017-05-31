@@ -124,6 +124,7 @@ function borradoOcho() {
 // funcionalidad del slide
 
 var actual = 0;
+var cambiar = 0;
 function puntos(n) {
   var ptn = document.getElementsByClassName("punto");
   for (i = 0; i < ptn.length; i++) {

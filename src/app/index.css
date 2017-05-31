@@ -101,6 +101,7 @@ a {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 .imagen-slider{
   width: 100%;
@@ -149,6 +150,28 @@ a {
   visibility: visible;
   opacity: 1;
   transition: visibility 1s, opacity 1s;
+  animation-name: next;
+  animation-duration: 7.5s;
+}
+
+.cambiar{
+  animation-name: next;
+  animation-duration: 7.5s;
+}
+
+@keyframes next {
+  0%   {margin-left: 100vw;}
+  10%  {margin-left: 0px;}
+  50%  {margin-left: 0px;}
+  90%  {margin-left: 0px;}
+  100% {margin-left: -100vw;}
+  }
+@keyframes prev {
+  0%   {margin-left: -100vw;}
+  10%  {margin-left: 0px;}
+  50%  {margin-left: 0px;}
+  90%  {margin-left: 0px;}
+  100% {margin-left: 100vw;}
 }
 .imagen-slider img{
   width: 100%;
@@ -274,18 +297,18 @@ a {
 }
 .app .segunda-columna{
   background-image: url(../assets/images/contenedor.png);
-  background-size: 235px 442px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  width: 250px;
-  height: 450px;
+  width: 218px;
+  height: 440px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .app .segunda-columna .contenido-de-funciones{
   border: 1px solid black;
-  width: 212px;
+  width: 194px;
   height: 342px;
   margin-top: -10px;
 }
@@ -477,36 +500,49 @@ a {
   background-image: url(../assets/images/00.png);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .uno{
-  background-image: url(../assets/images/00.png);
-  background-position: center;
+  background-image: url(../assets/images/01.jpg);
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .dos{
-  background-image: url(../assets/images/00.png);
+  background-image: url(../assets/images/02.jpg);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .tres{
-  background-image: url(../assets/images/00.png);
+  background-image: url(../assets/images/03.jpg);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .cuatro{
-  background-image: url(../assets/images/00.png);
+  background-image: url(../assets/images/04.png);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .cinco{
-  background-image: url(../assets/images/00.png);
+  background-image: url(../assets/images/05.jpg);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .seis{
-  background-image: url(../assets/images/00.png);
+  background-image: url(../assets/images/06.jpg);
   background-position: center;
   transition: 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
 }
 .hidden-lg{
     display: none !important;
