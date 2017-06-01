@@ -1,4 +1,7 @@
 <div class="container">
+
+  <!-- - - - - - - - Menú Normal - - - - - - -->
+
   <div class="header hidden-xs">
   <!-- boton menu responsive -->
   <button id="togg" onclick="menu()" ><img src="../assets/images/up.png"></button>
@@ -10,15 +13,14 @@
         <!-- <li class="hidden-xs"><span>|</span></li> -->
         <li><a href="" ng-click="gotoAnchor(2)">Quiénes somos</a></li>
         <!-- <li class="hidden-xs"><span>|</span></li> -->
-        <li><a href="" ng-click="gotoAnchor(3)">Suscripciones</a></li>
+        <li class="blog"><a href="" ng-click="gotoAnchor(3)">Suscripciones</a></li>
         <!-- <li class="hidden-xs"><span>|</span></li> -->
-        <li class="blog"><a href="">Blog</a></li>
       </ul>
       <!-- Sección de botones -->
       <div class="download-app">
         <div class="triangulo"></div>
         <div class="panel">
-          <p>Descarga<br> Gratuita</p>
+          <p>Próximamente: Descarga Gratuita</p>
           <div class="botones-download">
             <div>
               <img src="../assets/images/ios.png">
@@ -31,20 +33,46 @@
       </div>
     </div>
   </div>
+  <!-- - - - - - - - Termina Menú Responsive - - - - - - -->
+
+  <!-- - - - - - - - Menú Responsive - - - - - - -->
+  <div class="header">
+  <!-- boton menu responsive -->
+  <!-- Navbar -->
+    <div class="nav menu-responsive" id="toggi">
+      <img class="img--hidden" src="../assets/images/icon-reto.png" ng-click="gotoAnchor(0)">
+      <ul>
+        <li><a href="" ng-click="gotoAnchor(1)">Funciones</a></li>
+        <!-- <li class="hidden-xs"><span>|</span></li> -->
+        <li><a href="" ng-click="gotoAnchor(2)">Quiénes somos</a></li>
+        <!-- <li class="hidden-xs"><span>|</span></li> -->
+        <li class="blog"><a href="" ng-click="gotoAnchor(3)">Suscripciones</a></li>
+        <!-- <li class="hidden-xs"><span>|</span></li> -->
+      </ul>
+      <!-- Sección de botones -->
+      <div class="download-app">
+        <div class="triangulo"></div>
+        <div class="panel">
+          <p>Próximamente: Descarga Gratuita</p>
+          <div class="botones-download">
+            <div>
+              <img src="../assets/images/ios.png">
+            </div>
+            <div>
+              <img src="../assets/images/android.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- - - - - - - -Termina Menú Responsive - - - - - - -->
+
   <!-- slider -->
   <div class="contenedor-slider" id="anchor{{0}}">
   <!-- imagenes del slider -->
     <div class="imagen-slider actual fondo">
-      <div class="texto-slider texto-fondo">
-        <img src="../assets/images/fondo02.png">
-        <p><strong>Reto Universidad</strong><br>Es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
-        <a href="">
-          ¡Descubre  todo lo que puedes hacer!
-        </a>
-      </div>
-    </div>
-    <div class="imagen-slider">
-      <img src="../assets/images/estudiantes.jpg">
+      <img src="../assets/images/ru1.jpg">
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
         <p><strong>Reto Universidad</strong><br>Es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
@@ -54,20 +82,30 @@
       </div>
     </div>
     <div class="imagen-slider">
-      <img src="../assets/images/estudiantes02.jpg">
+      <img src="../assets/images/ru2.jpg">
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
-        <p><strong>Reto Universidad</strong><br>Es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <p><strong>¡Nos ajustamos a tus tiempos<br>y horarios!</strong><br>Puedes estudiar desde cualquier<br>lugar y a cualquier hora. Entre<br>clases o mientras viajas en el metro.</p>
         <a ng-click="gotoAnchor(1)">
           ¡Descubre  todo lo que puedes hacer!
         </a>
       </div>
     </div>
     <div class="imagen-slider">
-      <img src="../assets/images/estudiantes03.jpg">
+      <img src="../assets/images/ru3.jpg">
       <div class="texto-slider texto-fondo">
         <img src="../assets/images/fondo02.png">
-        <p><strong>Reto Universidad</strong><br>Es una app que te apoya en tu<br>preparación a los exámenes de<br>admisión a la universidad.</p>
+        <p><strong>¡Ingresa a la UNAM, IPN y UAM!</strong><br>Diseñada por expertos en los<br>conocimientos evaluados en las<br>pruebas de admisión, con<br>los últimos contenidos.</p>
+        <a ng-click="gotoAnchor(1)">
+          ¡Descubre  todo lo que puedes hacer!
+        </a>
+      </div>
+    </div>
+    <div class="imagen-slider cambiar">
+      <img src="../assets/images/ru4.jpg">
+      <div class="texto-slider texto-fondo">
+        <img src="../assets/images/fondo02.png">
+        <p><strong>¡Ofrecemos un precio inmejorable!</strong><br>La preparación para tu futuro no<br>tiene precio.</p>
         <a ng-click="gotoAnchor(1)">
           ¡Descubre  todo lo que puedes hacer!
         </a>
@@ -139,7 +177,7 @@
           <img src="../assets/images/seis.png" class="especial" id="06" onmouseover="backSeis()" onmouseout="borradoSeis()">
           <div>
             <h3>Preguntas relevantes</h3>
-            <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y parecidas al examen</p>
+            <p class="hidden-xs">Las preguntas con las que estudiarás son de temas<br class="hidden-xs"> importantes y corresponden a los temas evaluados<br class="hidden-xs"> en tu examen de admisión</p>
           </div>
         </div>
       </div>
@@ -150,7 +188,7 @@
       <h3>Misión</h3>
       <img src="../assets/images/mision.png">
       <p>
-        Demostrar que la aplicación en procesos formativos es una excelente herramienta para generar actores de cambio. Nuestra propuesta permitirá el acceso a la mayor cantidad de estudiantes a los conocimientos/habilidades/competencias necesarias para formar ciudadanos interesados y activos en temas relevantes para la sociedad.
+        Demostrar que la aplicación en procesos formativos es una excelente herramienta para generar actores de cambio. Nuestra propuesta permitirá el acceso a la mayor cantidad de estudiantes a los conocimientos / habilidades / competencias necesarias para formar ciudadanos interesados y activos en temas relevantes para la sociedad.
       </p>
     </div>
     <div class="equipo">
@@ -203,7 +241,7 @@
       </ul>
     </div>
     <div class="desc">
-      <h3>¡Descarga nuestra app gratis y asegura tu futuro!</h3>
+      <h3>!Próximamente descarga nuestra app gratis y asegura tu futuro!</h3>
       <div class="botones-descarga">
         <img src="../assets/images/ios.png">
         <img src="../assets/images/android.png">
@@ -217,22 +255,31 @@
         <img src="../assets/images/XMLID_391_.png">
       </div>
       <div class="conte">
-        <ul class="hidden-xs">
-          <li><a ng-click="gotoAnchor(1)">Funciones</a></li>
-          <li><a ng-click="gotoAnchor(2)">Quiénes somos</a></li>
-          <li><a ng-click="gotoAnchor(3)">Suscripciones</a></li>
-          <li><a onclick="menu()">Blog</a></li>
-          <li><img src="../assets/images/facebook.png" alt="">
-          <img src="../assets/images/instagram.png" alt=""></li>
+        <ul class="ul--class">
+          <li class="hidden-xs"><a ng-click="gotoAnchor(1)">Funciones</a></li>
+          <li class="hidden-xs"><a ng-click="gotoAnchor(2)">Quiénes somos</a></li>
+          <li class="hidden-xs"><a ng-click="gotoAnchor(3)">Suscripciones</a></li>
+          <li class="hidden-xs">
+              <img src="../assets/images/facebook.png" alt="">
+              <img src="../assets/images/instagram.png" alt="">
+          </li>
         </ul>
+        <br>
+        <div class="hidden-xx">
+          <img src="../assets/images/facebook.png" alt="">
+          <img src="../assets/images/instagram.png" alt="">
+        </div>
+
         <p>¡Descubre la forma más eficiente para entrar a la UNAM, Poli y muchas otras universidades!</p>
         <div class="contacto">
           <form>
-            <input type="text" name="Correo" placeholder="Escribe tu email...">
+            <div class="contacto ">
+                  <input type="email" name="Correo"  ng-model="user.email"  placeholder="Escribe tu email..." required >
+                 <button  ng-click="addPost(user)">
+                ¡Suscríbete!
+              </button>
+            </div>
           </form>
-          <button>
-            ¡Suscríbete!
-          </button>
         </div>
         <small>
         Todos los derechos reservados a Mellow Ventures / Mellow Consulting México D.F. 2017
@@ -255,11 +302,13 @@
     <small>en la descarga de nuestra app</small>
     <div>
       <form>
-        <input type="text" name="Correo" placeholder="Escribe tu email...">
+        <div class="">
+          <input type="email" name="Correo" ng-model="user.email" placeholder="Escribe tu email..." required >
+          <button ng-click="addPost(user)">
+            Obtén tu -10%
+          </button>
+        </div>
       </form>
-      <button>
-        Obtén tu -10%
-      </button>
     </div>
     <span onclick="popHidden();">
       Quiero perderme esta gran oportunidad
